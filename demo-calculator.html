@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="number", id="sodau">
+<input type="number", id="sohai"><br>
+<button type="button" onclick="add()">Addition(+)</button>
+<button type="button" onclick="sub()">Subtraction(-)</button>
+<button type="button" onclick="mul()">Multiplication(X)</button>
+<button type="button" onclick="div()">Division(/)</button>
+<p id="result"></p>
+<script>
+function add(){
+    let a = +document.getElementById("sodau").value;
+    let b = +document.getElementById("sohai").value;
+    let ans = a+b;
+    document.getElementById("result").innerHTML = ans;
+}
+function sub(){
+    let a = +document.getElementById("sodau").value;
+    let b = +document.getElementById("sohai").value;
+    let ans = a-b;
+    document.getElementById("result").innerHTML = ans;
+}
+function mul(){
+    let a = +document.getElementById("sodau").value;
+    let b = +document.getElementById("sohai").value;
+    let ans = a*b;
+    document.getElementById("result").innerHTML = ans;
+}
+function div(){
+    let a = +document.getElementById("sodau").value;
+    let b = +document.getElementById("sohai").value;
+    let ans = a/b;
+    document.getElementById("result").innerHTML = ans;
+}
+
+</script>
+</body>
+</html>
